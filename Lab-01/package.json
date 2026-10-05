@@ -1,0 +1,28 @@
+{
+  "name": "web-engeerning",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "start": "serve public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hajitalha01/Web-Engineering-Practice.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/hajitalha01/Web-Engineering-Practice/issues"
+  },
+  "homepage": "https://github.com/hajitalha01/Web-Engineering-Practice#readme",
+  "devDependencies": {
+    "eslint": "^10.12.0",
+    "prettier": "^3.9.9",
+    "serve": "^14.2.6"
+  }
+}
