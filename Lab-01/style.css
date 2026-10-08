@@ -1,0 +1,145 @@
+/* General Page Styling */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f4f7;
+    color: #222;
+    line-height: 1.6;
+}
+
+/* Main container */
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 30px auto;
+    background-color: white;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.10);
+}
+
+/* Headings */
+h1 {
+    color: #173b67;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: #245b91;
+    border-bottom: 2px solid #d8e5f2;
+    padding-bottom: 6px;
+    margin-top: 30px;
+}
+
+/* Paragraphs */
+p {
+    font-size: 16px;
+}
+
+/* Links */
+a {
+    color: #1261a0;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Lists */
+ul, ol {
+    padding-left: 25px;
+}
+
+li {
+    margin: 6px 0;
+}
+
+/* Profile image */
+.profile-image {
+    display: block;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin: 15px auto;
+    border-radius: 50%;
+    border: 4px solid #245b91;
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th,
+td {
+    border: 1px solid #555;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #245b91;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f4f7fa;
+}
+
+/* Definition list */
+dl {
+    margin-top: 15px;
+}
+
+dt {
+    font-weight: bold;
+    color: #245b91;
+    margin-top: 15px;
+}
+
+dd {
+    margin-left: 20px;
+}
+
+/* Favorite website section */
+.favorite {
+    background-color: #eef5fb;
+    padding: 10px 15px;
+    border-left: 4px solid #245b91;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 35px;
+    padding-top: 15px;
+    border-top: 1px solid #ddd;
+    color: #666;
+}
+
+/* Responsive design */
+@media (max-width: 700px) {
+    .container {
+        width: 95%;
+        padding: 20px;
+    }
+
+    table {
+        font-size: 13px;
+    }
+
+    th,
+    td {
+        padding: 7px;
+    }
+}
