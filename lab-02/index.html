@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Web Engineering - Lab 02</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Task 1: Skip Link -->
+    <a href="#main-content" class="skip-link">
+        Skip to main content
+    </a>
+
+    <!-- Task 1: Header + Navigation -->
+    <header>
+        <h1 id="greeting">Welcome to Web Engineering</h1>
+
+        <nav>
+            <ul>
+                <li>
+                    <a href="#schedule" aria-current="location">
+                        Office Hours
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#feedback">
+                        Send Feedback
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- Task 2: Main -->
+    <main id="main-content">
+
+        <!-- Task 3 + Task 4 -->
+        <section id="schedule">
+
+            <h2>Office Hours</h2>
+
+            <!-- Task 4: Informative SVG -->
+            <figure>
+
+                <svg
+                    role="img"
+                    aria-labelledby="pin-title"
+                    width="50"
+                    height="50"
+                    viewBox="0 0 24 24"
+                >
+                    <title id="pin-title">Location pin</title>
+
+                    <path
+                        d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"
+                        fill="currentColor"
+                    />
+
+                    <circle
+                        cx="12"
+                        cy="9"
+                        r="2.5"
+                        fill="white"
+                    />
+                </svg>
+
+                <figcaption>
+                    All office hours are held in Room 214.
+                </figcaption>
+
+            </figure>
+
+
+            <!-- Task 3: Accessible Table -->
+            <table>
+
+                <caption>
+                    Weekly office hours
+                </caption>
+
+                <thead>
+                    <tr>
+                        <th scope="col">Day</th>
+                        <th scope="col">Time</th>
+                        <th scope="col">Instructor</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>Monday</td>
+
+                        <td>
+                            <time datetime="10:00">10:00</time>
+                            -
+                            <time datetime="11:00">11:00</time>
+                        </td>
+
+                        <td>Lab Engineer</td>
+                    </tr>
+
+                    <tr>
+                        <td>Wednesday</td>
+
+                        <td>
+                            <time datetime="12:00">12:00</time>
+                            -
+                            <time datetime="13:00">13:00</time>
+                        </td>
+
+                        <td>Lab Engineer</td>
+                    </tr>
+
+                    <tr>
+                        <td>Friday</td>
+
+                        <td>
+                            <time datetime="14:00">14:00</time>
+                            -
+                            <time datetime="15:00">15:00</time>
+                        </td>
+
+                        <td>Lab Engineer</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+
+        <!-- Task 4: Decorative SVG Divider -->
+        <div class="divider" aria-hidden="true">
+
+            <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+            >
+                <circle
+                    cx="12"
+                    cy="12"
+                    r="3"
+                    fill="#0b3d91"
+                />
+            </svg>
+
+        </div>
+
+
+        <!-- Task 5 + Task 6 + Task 7 -->
+        <section id="feedback">
+
+            <h2>Send Feedback</h2>
+
+            <form id="feedback-form">
+
+                <!-- Task 5: Name -->
+                <div class="form-group">
+
+                    <label for="name">
+                        Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- Task 5 + Task 7: Email -->
+                <div class="form-group">
+
+                    <label for="email">
+                        Email
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        required
+                        aria-describedby="email-hint"
+                    >
+
+                    <span id="email-hint" class="hint">
+                        We will only use this to reply to you.
+                    </span>
+
+                </div>
+
+
+                <!-- Task 6: Topic -->
+                <fieldset>
+
+                    <legend>Topic</legend>
+
+                    <label>
+                        <input
+                            type="radio"
+                            name="topic"
+                            value="lab"
+                            checked
+                        >
+
+                        Lab content
+                    </label>
+
+                    <label>
+                        <input
+                            type="radio"
+                            name="topic"
+                            value="other"
+                        >
+
+                        Something else
+                    </label>
+
+                </fieldset>
+
+
+                <!-- Task 6: Message -->
+                <div class="form-group">
+
+                    <label for="message">
+                        Message
+                    </label>
+
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="5"
+                        required
+                    ></textarea>
+
+                </div>
+
+
+                <!-- Task 6: Submit -->
+                <button type="submit">
+                    Submit Feedback
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <!-- Task 2: Footer -->
+    <footer>
+
+        <address>
+            Contact your instructor for help.
+        </address>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
