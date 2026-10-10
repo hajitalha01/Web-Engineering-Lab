@@ -1,0 +1,28 @@
+.main {
+    width: 1000px;
+    height: 540px;
+    background-color: blue;
+}
+
+.row1{
+    width: 1000px;
+    height: 100px;
+    color: aliceblue;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    background-color: blueviolet;
+
+}
+.row2{
+    width: 1000px;
+    height: 40px;
+    background-color: aqua;
+}
+.row2c1 {
+    width: 200px;
+    height: 40px;
+    float:left;
+    background-color: bisque;
+
+}
