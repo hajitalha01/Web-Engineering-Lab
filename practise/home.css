@@ -2,6 +2,8 @@
     width: 1000px;
     height: 540px;
     background-color: blue;
+    border: 5px solid  black;
+    margin: 50px;
 }
 
 .row1{
@@ -20,9 +22,34 @@
     background-color: aqua;
 }
 .row2c1 {
-    width: 200px;
+    width: 196px;
     height: 40px;
+    border: 2px solid black;
     float:left;
     background-color: bisque;
 
+}
+.row3{
+    width: 1000px;
+    height: 200px;
+    background-color: greenyellow;
+}
+.row3left{
+    width: 250px;
+    height: 200px;
+    float: left;
+   
+
+   
+}
+.row3right{
+    width: 720px;
+    height: 200px;
+    float: left;
+    margin-left: 20px;
+}
+.row3leftside{
+    width: 250px;
+    height: 40px;
+    background-color: burlywood;
 }
