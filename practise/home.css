@@ -22,9 +22,11 @@
     background-color: aqua;
 }
 .row2c1 {
-    width: 196px;
-    height: 40px;
+    width: 197px;
+    height: 28px;
     border: 2px solid black;
+    text-align: center;
+    padding-top: 10px;
     float:left;
     background-color: bisque;
 
@@ -35,12 +37,10 @@
     background-color: greenyellow;
 }
 .row3left{
-    width: 250px;
-    height: 200px;
+    width: 230px;
+    height: 180px;
     float: left;
-   
-
-   
+    text-align: center;  
 }
 .row3right{
     width: 720px;
@@ -50,7 +50,7 @@
 }
 .row3leftside{
     width: 250px;
-    height: 40px;
+    height: 30px;
     background-color: burlywood;
 }
 .row4{
@@ -58,3 +58,7 @@
     height: 200px;
     float: left;
     margin-left: 20px;
+
+    padding-top: 10px;
+}
+
