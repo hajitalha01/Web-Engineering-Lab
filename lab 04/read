@@ -1,0 +1,68 @@
+Web Engineering Lab
+
+Lab work for the Web Engineering course. This repository (web-engineering-lab) grows lab by lab.
+
+Lab 04: Flexbox, Grid and the JavaScript Runtime and DOM
+
+An office-hours page where a visitor can select a booking slot. It covers two CSS layout engines (Flexbox and Grid) and JavaScript modules, DOM manipulation and the browser runtime.
+
+Features
+Flexbox header (title left, navigation right), navigation row and an icon beside its caption
+Grid two-column Office Hours section (2fr 1fr) and a two-column feedback form
+Responsive layout: one media query switches both grids to a single column at 40rem or narrower
+ES modules: main.js imports delay and makeCounter from utils.js
+DOM with a single delegated click listener using closest(), dataset, classList.toggle() and querySelectorAll
+Async/await booking: the status says "Updating…", waits one second, then confirms with a numbered booking
+Accessible: buttons have accessible names, the status paragraph is a live region (role="status"), and booking works from the keyboard
+Project Structure
+web-engineering-lab/
+├── public/
+│   ├── index.html    # page structure, schedule table, form
+│   ├── styles.css    # layered CSS: base, components, utilities
+│   ├── main.js       # DOM logic and event delegation (ES module)
+│   └── utils.js      # delay() and makeCounter() (ES module)
+├── NOTES.md          # event-loop prediction and explanation
+└── README.md
+Run Locally
+
+JavaScript modules do not load from a file:// address, so the page must be served over http.
+
+Open the project folder in VS Code.
+Install the Live Server extension.
+Right-click public/index.html and choose Open with Live Server.
+How to Use
+Click Select on any day in the Office Hours table.
+The status line shows "Updating…", then "Booking #N confirmed".
+Click Select again on the same row to cancel it.
+Keyboard: Tab to a button and press Enter or Space.
+Concepts Covered
+Topic	Where
+Flexbox: display: flex, gap, justify-content, align-items, flex-wrap	header, nav ul, figure
+Grid: grid-template-columns, fr, gap, grid-column	#schedule, form, .span-all
+Media query	@media (max-width: 40rem)
+ES modules: import / export	main.js, utils.js
+DOM: querySelector, closest, dataset, classList	main.js
+Event delegation	listener on #schedule tbody
+Event loop, microtasks, async/await, closures	main.js, utils.js, NOTES.md
+Event Loop Exercise
+
+Predict the print order, then run it in the DevTools Console:
+
+js
+console.log("1 start");
+setTimeout(() => console.log("2 timeout"), 0);
+Promise.resolve().then(() => console.log("3 promise"));
+console.log("4 end");
+
+The prediction and explanation are written in NOTES.md.
+
+Checks
+ Booking works with keyboard only (Enter and Space)
+ No red errors in the Console
+ Lighthouse Accessibility score is 100
+ Both grids collapse to one column in the DevTools device toolbar
+Tools
+
+Google Chrome DevTools, VS Code, Live Server, Lighthouse and Git. All free.
+
+Author
