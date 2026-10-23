@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Web Engineering Lab 04</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Web Engineering Lab</h1>
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="#schedule">Office Hours</a></li>
+        <li><a href="#feedback">Feedback</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="schedule">
+      <h2 class="span-all">Office Hours</h2>
+
+      <table>
+        <caption class="text-muted">Select a day to book a slot</caption>
+        <thead>
+          <tr>
+            <th scope="col">Day</th>
+            <th scope="col">Time</th>
+            <th scope="col">Book</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Monday</th>
+            <td>10:00 – 12:00</td>
+            <td><button type="button" data-day="Monday" aria-label="Select Monday">Select</button></td>
+          </tr>
+          <tr>
+            <th scope="row">Wednesday</th>
+            <td>14:00 – 16:00</td>
+            <td><button type="button" data-day="Wednesday" aria-label="Select Wednesday">Select</button></td>
+          </tr>
+          <tr>
+            <th scope="row">Friday</th>
+            <td>09:00 – 11:00</td>
+            <td><button type="button" data-day="Friday" aria-label="Select Friday">Select</button></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <figure>
+        <span aria-hidden="true" class="icon">📍</span>
+        <figcaption>Room 204, Computer Science Block</figcaption>
+      </figure>
+
+      <p id="status" role="status" class="span-all text-muted"></p>
+    </section>
+
+    <section id="feedback">
+      <h2>Feedback</h2>
+      <form>
+        <p>
+          <label for="name">Name</label><br>
+          <input type="text" id="name" name="name">
+        </p>
+        <p>
+          <label for="email">Email</label><br>
+          <input type="email" id="email" name="email">
+        </p>
+
+        <fieldset class="span-all">
+          <legend>Topic</legend>
+          <label><input type="radio" name="topic" value="lab" checked> Lab</label>
+          <label><input type="radio" name="topic" value="lecture"> Lecture</label>
+          <label><input type="radio" name="topic" value="other"> Other</label>
+        </fieldset>
+
+        <p class="span-all">
+          <label for="message">Message</label><br>
+          <textarea id="message" name="message" rows="4"></textarea>
+        </p>
+
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <script type="module" src="main.js"></script>
+</body>
+</html>
