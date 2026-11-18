@@ -1,4 +1,4 @@
-Web Engineering Lab Mid
+ Web Engineering Lab Mid term
 
 This repository contains solutions for two questions:
 
